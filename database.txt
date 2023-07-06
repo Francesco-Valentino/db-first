@@ -1,0 +1,28 @@
+---
+EXAMPLE ARCHITECTURE OF DATA IN A DATABASE
+---
+CARS IN A DEALERSHIP USED AS EXAMPLE
+---
+id                      *number     SMALLINT        UNSIGNED    PRIMARY_KEY    AUTOINCREMENT
+
+brand                   *string     VARCHAR(15)                 NOT_NULL
+
+model                   *string     VARCHAR(50)                 NOT_NULL
+
+year_of_production      *number     SMALLINT        UNSIGNED    NOT_NULL
+
+series                  *number     TINYINT         UNSIGNED    NULL
+
+cubic_capacity          *number     FLOAT(2, 1)                 NOT_NULL
+
+horse_power             *number     SMALLINT        UNSIGNED    NOT_NULL
+
+mileage                 *number     MEDIUMINT       UNSIGNED    NOT_NULL
+
+fuel_type               *string     VARCHAR(15)                 NOT_NULL
+
+price_in_dollars        *number     FLOAT(9 ,2)     UNSIGNED    NULL
+
+photo                   *string      TEXT                       NULL
+
+license_plate           *string     VARCHAR(30)                 NULL    UNIQUE
